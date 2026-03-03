@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daftar Tugas Mahasiswa</title>
+    <title>Alicia Putri Lestari - OOP</title>
     <style>
         body {
+            background-color: black;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #74ebd5, #9face6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            color: white;
             margin: 0;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            width: 500px;
+            padding: 0;
             text-align: center;
         }
 
-        h2 {
-            margin-bottom: 20px;
+        h1 {
+            margin-top: 80px;
+            font-size: 60px;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 0px red, -3px -3px 0px cyan;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .info {
+            margin-top: 10px;
+            color: gray;
+            letter-spacing: 3px;
         }
 
-        th {
-            background-color: #6c63ff;
+        .card {
+            margin: 60px auto;
+            width: 70%;
+            border: 2px solid red;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .card h2 {
+            color: red;
+        }
+
+        .card p {
+            line-height: 1.8;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: red;
             color: white;
-            padding: 10px;
-        }
-
-        td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        a {
             text-decoration: none;
-            background-color: #6c63ff;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
+            border-radius: 8px;
+            transition: 0.3s;
         }
 
-        a:hover {
-            background-color: #4e47c7;
+        .btn-link:hover {
+            background-color: darkred;
         }
     </style>
 </head>
 <body>
 
+    <h1>ALICIA PUTRI LESTARI</h1>
+    <div class="info">[ NIM: 221410057 | KELAS: SI 2A ]</div>
+
     <div class="card">
-        <h2>Daftar Tugas Mahasiswa</h2>
+        <h2>01 PENGERTIAN OOP</h2>
+        <p>
+            Object Oriented Programming (OOP) adalah paradigma pemrograman 
+            yang berfokus pada objek sebagai unit utama. 
+            Setiap objek memiliki state (data) dan behavior (perilaku).
+        </p>
 
-        <table>
-            <tr>
-                <th>Nama</th>
-                <th>Link</th>
-            </tr>
+        <!-- TOMBOL LINK -->
+        <div style="text-align:center;">
+            <a href="https://iskandarjono077-source.github.io/tugas/" 
+               target="_blank" 
+               class="btn-link">
+               Lihat Tugas Saya
+            </a>
+        </div>
 
-            <tr>
-                <td>Alicia Putri Lestari</td>
-                <td>
-                    <a href="https://iskandarjono077-source.github.io/program/" target="_blank">
-                        Lihat Tugas
-                    </a>
-                </td>
-            </tr>
-
-        </table>
     </div>
 
 </body>
